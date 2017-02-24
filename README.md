@@ -18,6 +18,7 @@ Story of the Day is a wensite where people can create their own accounts and pos
 <img src="./assets/2.JPG" style="width: 30px;">
 <img src="./assets/3.JPG" style="width: 30px;">
 <img src="./assets/4.JPG" style="width: 30px;">
+<img src="./assets/ERD.JPG" style="width: 30px;">
 
 
 ##Links
