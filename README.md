@@ -14,11 +14,11 @@ Story of the Day is a wensite where people can create their own accounts and pos
 * Like or dislike button for the sotries of the day
 
 ##Wrieframes
-<img src="./assets/1.jpg" style="width: 30px;">
-<img src="./assets/2.jpg" style="width: 30px;">
-<img src="./assets/3.jpg" style="width: 30px;">
-<img src="./assets/4.jpg" style="width: 30px;">
-<img src="./assets/ERD.jpg" style="width: 30px;">
+<img src="./assets/1.JPG" style="width: 30px;">
+<img src="./assets/2.JPG" style="width: 30px;">
+<img src="./assets/3.JPG" style="width: 30px;">
+<img src="./assets/4.JPG" style="width: 30px;">
+<img src="./assets/ERD.JPG" style="width: 30px;">
 
 
 ##Links
