@@ -1,5 +1,10 @@
 class PostsController < ApplicationController
 
+  before_action :authorize, only: [:posts, :edit, :new, :show]
+
+  def secret
+  end
+
   def index
     @posts = Post.all
   end
@@ -14,14 +19,15 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
+    redirect_to posts_path(current_user) if current_user != @post.user
   end
 
   def create
-    @post = Post.new(post_params)
+    @post = current_user.posts.new(post_params)
     if @post.save
       redirect_to :posts
     else
-      render :new
+      redirect_to new_post_path
     end
   end
 
@@ -45,10 +51,6 @@ def post_params
   params.require(:post).permit(:title, :content)
 end
 
-before_action :authorize, only: [:posts, :edit, :new, :show]
 
-
-def secret
-end
 
 end

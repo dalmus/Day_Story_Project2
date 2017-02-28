@@ -8,9 +8,13 @@
    <%= @post.content %>
 </p>
 
+<p>
+  <strong>Story made by:</strong>
+  <%= @post.user.name %>
+</p>
 
 <!-- add a link to this vampire's edit page --> |
 <!-- add a link to the index page -->
 <%= link_to "Back to the Stories!", posts_path %>
-<%= link_to "Delete this Story!", post_path, method: :delete, data: {confirm: "Are you sure you want to delete this Story?"} %>
-<%= link_to "Edit this Story", edit_vampire_path(@post) %>
+<%= link_to "| Delete this Story!", post_path, method: :delete, data: {confirm: "Are you sure you want to delete this Story?"} %>
+<%= link_to "| Edit this Story", edit_post_path(@post) %>
