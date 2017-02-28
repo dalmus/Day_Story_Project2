@@ -1,9 +1,6 @@
 <h1>Editing Story of the Day</h1>
 
-<!-- render the form partial -->
 
-<!-- add a link to this vampire's show page --> |
-<!-- add a link to the index page -->
 
 <%= form_for @post do |f| %>
 
@@ -14,7 +11,7 @@
 
     <div>
         <%= f.label :content %>
-        <%= f.text_field :content %>
+        <%= f.text_area :content %>
     </div>
 
     <%= f.submit "Submit these changes!" %>

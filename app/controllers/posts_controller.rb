@@ -11,6 +11,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+    @comments = Comment.where(post_id: @post).order("created_at DESC")
   end
 
   def new
@@ -44,6 +45,9 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.destroy
     redirect_to posts_path
+
+
+    # redirect_to posts_path
   end
 
 private
