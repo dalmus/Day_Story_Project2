@@ -1,0 +1,26 @@
+<h1>Story of the Day</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>title</th>
+      <th>content</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @posts.each do |post| %>
+      <tr>
+        <td><%= post.title %> </td>
+        <td><%= post.content %></td>
+        <td><%= link_to "Read Story", post_path(post) %></td>
+        -<td><%= link_to "Edit Story", edit_post_path(post) %></td>
+        -<td><%= link_to "Delete this post!", post, method: :delete, data: { confirm: "Are you sure you want to delete this Story?"} %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<%= link_to "New Story", new_post_path %>
