@@ -1,10 +1,10 @@
 <p>
-  <strong>title:</strong>
+  <strong>Title of Story:</strong>
    <%= @post.title %>
 </p>
 
 <p>
-  <strong>content:</strong>
+  <strong>Story:</strong>
    <%= @post.content %>
 </p>
 
@@ -15,6 +15,6 @@
 
 <%= render 'comments/comment' %>
 
-<%= link_to "Back to the Stories!", posts_path %>
+<%#= link_to "Back to the Stories!", posts_path %>
 <%= link_to "| Delete this Story!", post_path, method: :delete, data: {confirm: "Are you sure you want to delete this Story?"} if @post.user == current_user %>
 <%= link_to "| Edit this Story", edit_post_path(@post) if @post.user == current_user %>

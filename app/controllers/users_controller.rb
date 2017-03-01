@@ -1,5 +1,14 @@
 class UsersController < ApplicationController
 
+  def index
+    @posts = Post.all
+  end
+
+  def show
+  @user = User.find(params[:id])
+  @posts = @user.posts
+  end
+
   def new
    @user = User.new
  end
@@ -16,6 +25,7 @@ class UsersController < ApplicationController
      render :new
    end
  end
+
 
 private
 

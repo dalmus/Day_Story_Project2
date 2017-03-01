@@ -1,12 +1,12 @@
 class PostsController < ApplicationController
 
-  before_action :authorize, only: [:posts, :edit, :new, :show]
-
+  before_action :authorize, only: [:posts, :edit, :new, :show, :post_owner]
+  before_action :authorize, :post_owner, only: [:destroy, :edit, :update]
   def secret
   end
 
   def index
-    @posts = Post.all
+    @posts = Post.all.order("updated_at DESC")
   end
 
   def show
@@ -45,9 +45,6 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @post.destroy
     redirect_to posts_path
-
-
-    # redirect_to posts_path
   end
 
 private
@@ -55,6 +52,12 @@ def post_params
   params.require(:post).permit(:title, :content)
 end
 
-
+def post_owner
+  @post = Post.find(params[:id])
+  unless current_user.id == @post.user_id
+    flash[:notice] = "You Shall not pass!"
+    redirect_to @post
+  end
+end
 
 end
