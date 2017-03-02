@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   resources :comments
 end
 
-
-  get 'users/' => 'users#index'
   get 'users/new' => 'users#new', as: :new_user
   get 'users/:id' => 'users#show', as: :user
   post 'users' => 'users#create'

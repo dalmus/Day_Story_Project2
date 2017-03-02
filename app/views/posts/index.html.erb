@@ -13,7 +13,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td><h4><%= post.title %> | </h4></td>
-        <td><h4><%= post.user.name %> </h4></td>
+        <td><h4><%= link_to post.user.name, user_path(post.user) %> </h4></td>
         <td><h4><%= link_to "Read Story", post_path(post) %></h4></td>
         <td><h4><%= link_to "| Delete this Story!", post, method: :delete, data: {confirm: "Are you sure you want to delete this Story?"} if post.user == current_user %></h4></td>
       </tr>
