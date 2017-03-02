@@ -24,3 +24,4 @@ Story of the Day is a wensite where people can create their own accounts and pos
 ##Links
 
 * [Trello](https://trello.com/b/Dfe71iIC/project-2)
+* [Story of the Day app](https://daystory.herokuapp.com/)
