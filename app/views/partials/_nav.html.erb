@@ -17,14 +17,23 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav"><h4>
         <!-- <li class="active"><a href="/users">Profile <span class="sr-only">(current)</span></a></li> -->
         <% if current_user %>
         <li class="active">
         <%= link_to 'Profile', user_path(current_user) %>
         </li>
         <% end %>
-      </ul>
+      </h4></ul>
+      <ul class="nav navbar-nav padding-welcome"><h4>
+        <!-- <li class="active"><a href="/users">Profile <span class="sr-only">(current)</span></a></li> -->
+        <% if current_user %>
+          <!-- current_user will return true if a user is logged in -->
+          <%= "Welcome #{current_user.name}" %> | <%= link_to 'Log Out', logout_path, method: :delete %>
+        <% else %>
+         <%= link_to 'Log In', login_path %>
+        <% end %>
+      </h4></ul>
       <form class="navbar-form navbar-left"><% if current_user %>
         <% end %>
       </form>

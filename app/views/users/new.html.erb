@@ -1,24 +1,30 @@
+<div class="letter_color opacity">
+<h1>Welcome</h1>
+<p>Hello, in this application you will be bale to wrtie your stories ofthe Day and share it with other people</p>
 <h1>Sign Up</h1>
 
 <%= form_for @user do |f| %>
   <div>
+  <div class="center">
     <%= f.label :name %>
     <%= f.text_field :name, autofocus: true %>
   </div>
-  <div>
+  <div class="center">
     <%= f.label :email %>
     <%= f.text_field :email %>
   </div>
 
-  <div>
+  <div class="center">
     <%= f.label :password %>
     <%= f.password_field :password %>
   </div>
-  <div>
-    <%= f.label :password_confirmation %>
+  <div class="center">
+    <%= f.label :confirmation %>
     <%= f.password_field :password_confirmation %>
   </div>
-  <div>
+  <div class="center">
     <%= f.submit "Sign up!" %>
   </div>
+</div>
 <% end %>
+</div>

@@ -17,3 +17,61 @@
  @import "bootswatch/superhero/variables";
  @import "bootstrap";
  @import "bootswatch/superhero/bootswatch";
+
+.box_center {
+  margin: auto;
+  width: 60%;
+  padding: 10px;
+}
+
+.center {
+  margin: auto;
+  width: 150px;
+  padding: 10px;
+}
+
+.border {
+  border: solid orange;
+}
+
+.botton{
+  border-radius: 5px;
+  background-color: orange;
+}
+
+.woods{
+  background-image: url('woods.jpg');
+  background-size: cover;
+}
+
+.opacity{
+  background-color: rgba(5, 2, 0, 0.4);
+}
+
+.letter_color {
+  color: rgba(228, 146, 58, 1);
+}
+
+h1 {
+  color: rgba(228, 146, 58, 1);
+  font-family: fantasy;
+}
+
+div {
+  color: rgba(228, 146, 58, 1);
+  font-family: fantasy;
+}
+
+.padding-welcome{
+  padding-top: 8px;
+  float: right;
+}
+
+.padding-box{
+  width: 300px;
+  height: 250px;
+}
+
+.padding-title{
+  width: 350px;
+}
