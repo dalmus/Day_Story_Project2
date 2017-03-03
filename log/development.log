@@ -42966,3 +42966,12 @@ Processing by UsersController#new as HTML
 Completed 200 OK in 94ms (Views: 90.8ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/" for ::1 at 2017-03-02 18:57:42 -0800
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered partials/_nav.html.erb (3.0ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 0.5ms)
+
+
