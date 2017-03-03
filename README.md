@@ -1,6 +1,6 @@
 # Story of the Day
 
-Story of the Day is a wensite where people can create their own accounts and post their story in the website and will be able to read all the other user Stories of the Day that are posted.
+Story of the Day is a website where people can create their own accounts and post their story in the website and will be able to read all the other user Stories of the Day that are posted.
 
 ##Deploy instructions
 
