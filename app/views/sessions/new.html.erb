@@ -2,15 +2,15 @@
 <h1>Log In </h1>
 <%= form_for :login do |f| %>
   <div>
-    <%= f.label :email %>
+    <%= f.label :email, class: "text" %>
     <%= f.text_field :email, autofocus: true %>
   </div>
   <div>
-    <%= f.label :password %>
+    <%= f.label :password, class: "text" %>
     <%= f.password_field :password %>
   </div>
   <div>
-    <%= f.submit "Log In" %>
+    <%= f.submit "Log In", class: "botton letter_color" %>
   </div>
 <% end %>
 </div>

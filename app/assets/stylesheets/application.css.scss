@@ -31,12 +31,7 @@
 }
 
 .border {
-  border: solid orange;
-}
-
-.botton{
-  border-radius: 5px;
-  background-color: orange;
+  border: solid #2b3e50;
 }
 
 .woods{
@@ -45,11 +40,11 @@
 }
 
 .opacity{
-  background-color: rgba(5, 2, 0, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .letter_color {
-  color: rgba(228, 146, 58, 1);
+  color: rgba(228, 146, 58, 1)!important;
 }
 
 h1 {
@@ -74,4 +69,23 @@ div {
 
 .padding-title{
   width: 350px;
+}
+
+.text-size{
+  font-size: 30px;
+}
+
+.text{
+  font-size: 23px;
+}
+
+.botton{
+  border: solid #2b3e50;
+  border-radius: 10px;
+  margin: 10px 0 5px 0;
+  background-color: #2b3e50;
+}
+
+.align-center{
+  text-align: center;
 }

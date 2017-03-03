@@ -1,29 +1,32 @@
 <div class="letter_color opacity">
 <h1>Welcome</h1>
-<p>Hello, in this application you will be bale to wrtie your stories ofthe Day and share it with other people</p>
-<h1>Sign Up</h1>
+<div class="text">
+<p>Hello, in this application you will be bale to wrtie your stories ofthe Day and share it with other people.</p>
+<p>If you like music while you read different stories there a music player on the bottom of the page just let that tab open!.</p>
+</div>
+<h1 class="align-center">Sign Up</h1>
 
 <%= form_for @user do |f| %>
   <div>
   <div class="center">
-    <%= f.label :name %>
+    <%= f.label :name, class: "text" %>
     <%= f.text_field :name, autofocus: true %>
   </div>
   <div class="center">
-    <%= f.label :email %>
+    <%= f.label :email, class: "text" %>
     <%= f.text_field :email %>
   </div>
 
   <div class="center">
-    <%= f.label :password %>
+    <%= f.label :password, class: "text" %>
     <%= f.password_field :password %>
   </div>
   <div class="center">
-    <%= f.label :confirmation %>
+    <%= f.label :confirmation, class: "text" %>
     <%= f.password_field :password_confirmation %>
   </div>
   <div class="center">
-    <%= f.submit "Sign up!" %>
+    <%= f.submit "Sign up!", class: "botton letter_color" %>
   </div>
 </div>
 <% end %>

@@ -1,22 +1,24 @@
+<div class="opacity">
 <h1>New Story of the Day</h1>
 
 <!-- render the form partial -->
 <%= form_for @post do  |f| %>
 
   <div>
-    <%= f.label :title %>
+    <%= f.label :title, class: "text-size" %>
     <%= f.text_field :title %>
   </div>
 
 <div>
-    <%= f.label :content %>
+    <%= f.label :content, class: "text-size" %>
     <%= f.text_area :content %>
 </div>
 
 
 
-  <%= f.submit "Add a new Story!" %>
+  <%= f.submit "Add a new Story!", class: "botton letter_color" %>
 
 <% end %>
 <!-- add a link to the index page -->
-<%= link_to "Back to the list!", posts_path %>
+<%= link_to "Back to the list!", posts_path, class: "text-size botton padding-welcome" %>
+</div>

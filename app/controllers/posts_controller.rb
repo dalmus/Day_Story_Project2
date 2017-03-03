@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
-
-  before_action :authorize, only: [:posts, :edit, :new, :show, :post_owner]
-  before_action :authorize, :post_owner, only: [:destroy, :edit, :update]
+  before_action :authorize, only: [:index, :new, :show]
+  before_action :post_owner, only: [:destroy, :edit, :update]
   def secret
   end
 

@@ -1,6 +1,6 @@
 
 
-<table class = "table table-bordered opacity">
+<table class = "table table-bordered opacity border">
   <thead>
     <tr>
       <th><h3>Title</h3></th>
@@ -11,15 +11,19 @@
 
   <tbody>
     <% @posts.each do |post| %>
-      <tr class="box_center letter_color">
-        <td ><h4><%= post.title %>  </h4></td>
-        <td ><h4><%= link_to post.user.name, user_path(post.user) %> </h4></td>
-        <td ><h4><%= link_to "Read Story", post_path(post) %></h4></td>
-        <td ><h4><%= link_to "| Delete this Story!", post, method: :delete, data: {confirm: "Are you sure you want to delete this Story?"} if post.user == current_user %></h4></td>
+      <tr class="box_center border">
+        <td><h4><%= post.title %>  </h4></td>
+        <td><h4><%= link_to post.user.name, user_path(post.user), class: "letter_color" %> </h4></td>
+        <td><h4><%= link_to "Read Story", post_path(post), class: "letter_color" %></h4></td>
+        <td><h4><%= link_to "| Delete this Story!", post, class: "letter_color", method: :delete, data: {confirm: "Are you sure you want to delete this Story?"} if post.user == current_user %></h4></td>
+
       </tr>
     <% end %>
   </tbody>
 </table>
 
 <br>
-<%= link_to "New Story", new_post_path %>
+<h4><%= link_to "New Story", new_post_path, class: "botton" %></h4>
+<div class="align-center">
+  <iframe width="315" height="177" src="https://www.youtube.com/embed/GJ4KPrrbOU4" frameborder="0" allowfullscreen></iframe>
+</div>
