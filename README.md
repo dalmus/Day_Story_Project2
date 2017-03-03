@@ -26,7 +26,8 @@ To use the app just click on hte link of the top or another link on the bottom.
 * CSS/ Bootstrap 
 
 ##Unsolved problems
-
+* you shall not pass notice 
+* putting spaces between paragraphs
 
 ##Wrieframes
 <img src="./assets/1.JPG" style="width: 30px;">
