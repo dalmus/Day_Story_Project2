@@ -1,18 +1,16 @@
-<div class="opacity">
-<p>
-  <strong>Title of Story:</strong>
+<div class="opacity padding-text">
+<p><h1>
    <%= @post.title %>
-</p>
+</h1></p>
 
-<p>
-  <strong>Story:</strong>
+<p><h4>
    <%= @post.content %>
-</p>
+</h4></p>
 
-<p>
+<p><h4>
   <strong>Author:</strong>
   <%= @post.user.name %>
-</p>
+</h4></p>
 
 <%= render 'comments/comment' %>
 

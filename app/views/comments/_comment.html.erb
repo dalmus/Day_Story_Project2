@@ -1,8 +1,8 @@
 <h3> This Story has <%= pluralize(@comments.count, "Comment") %></h3>
 
 <% @comments.each do |comment| %>
-  <p><b><%= comment.user.name %></b></p>
-  <p><%= comment.content %></P>
+  <div class="title-color"><p><b><h4><%= comment.user.name %></h4></b></p></div>
+  <div class="comment-color"><p><h5><%= comment.content %></h5></P></div>
 
   <%= link_to "Delete comment", [comment.post, comment] , method: :delete if current_user == comment.user  %>
   <%= link_to "Edit comment", edit_post_comment_path(comment.post, comment) if current_user == comment.user %>

@@ -40,7 +40,7 @@
 }
 
 .opacity{
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .letter_color {
@@ -57,6 +57,18 @@ div {
   font-family: fantasy;
 }
 
+h4 {
+  line-height: 30px;
+}
+
+.title-color{
+  color: rgba(4, 87, 169, 1);
+}
+
+.comment-color{
+  color: rgba(224, 35, 6, 1);
+}
+
 .padding-welcome{
   padding-top: 8px;
   float: right;
@@ -69,6 +81,10 @@ div {
 
 .padding-title{
   width: 350px;
+}
+
+.padding-text{
+  padding: 15px 10px 0 20px;
 }
 
 .text-size{
